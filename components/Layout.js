@@ -1,7 +1,9 @@
-export default function Layout() {
+export default function Layout({children}) {
     return (
-        <div>
-            Enter
-        </div>
-    );
+        <>
+            <header></header>
+            {children}
+            <footer></footer>
+        </>
+    )
 }
