@@ -1,0 +1,565 @@
+.kv{
+    flex-direction: column;
+    margin-bottom: 12.2rem;
+}
+
+.kv .title{
+    width: 75%;
+    height: 14rem;
+    background: url('/images/common/kv_bg.svg') no-repeat center center/cover;
+}
+
+.kv .title h1{
+    font-size: 4.2rem;
+    text-align: center;
+    font-weight: bold;
+    list-style: .8;
+    padding-bottom: 1.1rem;
+    border-bottom: .05rem solid #999999;
+}
+
+.kv .title h1 small{
+    font-size: 1.8rem;
+    color: #1A3491;
+}
+
+.kv .topicPath{
+    width: 75%;
+    margin: 4.2rem 0;
+}
+
+.kv .topicPath a{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #999999;
+}
+
+.kv .topicPath p{
+    font-weight: bold;
+}
+
+.kv .topicPath p:nth-child(2){
+    margin: 0 3rem;
+}
+
+.kv > p{
+    font-weight: bold;
+}
+
+/* campaign */
+.campaign{
+    background: black;
+    padding: 5.7rem 0 11.7rem;
+}
+
+.campaign .wrap{
+    width: 73%;
+}
+
+.campaign .wrap h2{
+    font-size: 4.2rem;
+    font-weight: bold;
+    color: white;
+    line-height: .8;
+    padding-bottom: 1.1rem;
+    margin-bottom: 4.8rem;
+    position: relative;
+}
+
+.campaign .wrap h2::before{
+    content: '';
+    position: absolute;
+    width: 35.2rem;
+    height: .05rem;
+    left: 0;
+    bottom: 0;
+    background: white;
+}
+
+.campaign .wrap h2 small{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.campaign .wrap .tabs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.campaign .wrap .tablist{
+    display: flex;
+    flex-direction: column;
+}
+
+.tab{
+    opacity: .5;
+}
+
+.campaign .wrap .tablist .tab{
+    width: 8rem;
+    height: 5.4rem;
+    overflow: hidden;
+    border-radius: .4rem;
+    padding: 0;
+    margin-bottom: 1.2rem;
+}
+
+.campaign .wrap .tabs .tablist .tab svg{
+    display: none;
+}
+
+.campaign .wrap .tablist .tab div{
+    width: 100%;
+    height: 100%;
+}
+
+.campaign .wrap .tablist .tab img{
+    object-fit: cover;
+}
+
+.campaign .wrap .tabpanels{
+    width: 93%;
+}
+
+.campaign .wrap .tabpanel{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.campaign .wrap .tabpanel .left{
+    width: 37%;
+}
+
+.campaign .wrap .tabpanel .left .image{
+    width: 100%;
+    height: 18.5rem;
+    border-radius: .8rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    border: .1rem solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campaign .wrap .tabpanel .left img{
+    object-fit: cover;
+    transition: all .1s ease-in-out;
+}
+
+.campaign .wrap .tabpanel .left img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.campaign .wrap .tabpanel .left .txt{
+    background: #333333;
+    border-radius: .8rem;
+    padding: 2.6rem 2.1rem;
+}
+
+.campaign .wrap .tabpanel .left .txt p{
+    color: white;
+}
+
+.campaign .wrap .tabpanel .left .txt .tags p{
+    font-size: 1.4rem;
+    padding: 1.2rem 1rem;
+    background: #999999;
+    margin-left: .8rem;
+}
+
+.campaign .wrap .tabpanel .left .txt .tags .new{
+    background: #F2182A;
+}
+
+.campaign .wrap .tabpanel .left .txt > div{
+    align-items: center;
+    margin-bottom: 1.7rem;
+}
+
+.campaign .wrap .tabpanel .left .txt div p{
+    font-size: 1.8rem;
+}
+
+.campaign .wrap .tabpanel .left .txt > p{
+    line-height: 1.8;
+}
+
+.campaign .wrap .tabpanel .right{
+    width: 60%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4.8rem;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+    font-size: 3.2rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    border-radius: .4rem;
+    overflow: hidden;
+    text-shadow: 0 0 .6rem rgba(0,0,0,35%);
+}
+
+.campaign .wrap .tabpanel .right::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0%), rgba(0,0,0,65%) );
+}
+
+.campaign .wrap .tabpanel .right div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.campaign .wrap .tabpanel .right img{
+    object-fit: cover;
+}
+
+.campaign .wrap .tabpanel .right svg{
+    margin-left: 4rem;
+    filter: drop-shadow(0 .3rem .3rem rgba(0,0,0,35%));
+}
+
+.campaign .wrap .tabpanel .right svg path{
+    color: white;
+}
+
+/* sns */
+.campaign:nth-child(4){
+    background: white;
+}
+
+.campaign:nth-child(4) .wrap h2{
+    color: #333333;
+}
+
+.campaign:nth-child(4) .wrap h2::before{
+    background: #333333;
+}
+
+.campaign:nth-child(4) .wrap h2 small{
+    color: #1A3491;
+}
+
+/* old */
+.old{
+    padding: 5.7rem 0;
+    background: #F7F7F7;
+}
+
+.old .wrap{
+    width: 73%;
+}
+
+.old .wrap h2{
+    font-size: 4.2rem;
+    font-weight: bold;
+    line-height: .8;
+    margin-bottom: 8.2rem;
+}
+
+.old .wrap h2 small{
+    font-size: 1.8rem;
+    color: #1A3491;
+}
+
+.old .wrap .content{
+    width: 65%;
+    margin: 0 auto 7.8rem;
+}
+
+.old .wrap .content li{
+    align-items: center;
+    padding-bottom: 1.8rem;
+    border-bottom: .05rem solid #333333;
+    margin-bottom: 3.4rem;
+    padding-left: 6.4rem;
+}
+
+.old .wrap .content li > div{
+    align-items: center;
+}
+
+.old .wrap .content li > div > p{
+    margin-right: .7rem;
+}
+
+.old .wrap .content .tags p{
+    font-size: 1.4rem;
+    padding: 1.2rem 1rem;
+    background: #999999;
+    margin-right: .8rem;
+    color: white;
+}
+
+.old .wrap .content li > p{
+    color: #A8A8A8;
+    margin-right: 2.2rem;
+}
+
+.old .wrap .content h3{
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 767px){
+    .kv .title{
+        width: 100%;
+        height: 9.3rem;
+        background: url('/images/common/kv_bg_sp.svg') no-repeat center center/125%;
+    }
+
+    .kv .title h1{
+        font-size: 2.7rem;
+        line-height: 1;
+        padding-bottom: .6rem;
+    }
+
+    .kv .title h1 small{
+        font-size: 1.4rem;
+    }
+
+    .kv .topicPath{
+        width: 85.33%;
+        margin: 1.8rem 0;
+    }
+
+    .kv .topicPath a, .kv .topicPath p{
+        font-size: 1.4rem;
+    }
+
+    .kv .topicPath p:nth-child(2){
+        margin: 0 .8rem;
+    }
+
+    .kv > p{
+        font-weight: normal;
+        line-height: 1.8;
+    }
+
+
+    /* category */
+    .category{
+        margin: 4.3rem auto 3.2rem;
+        width: 85.77%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .category h2{
+        font-size: 2.4rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .category h2::before{
+        right: -2.4rem;
+        width: 8rem;
+    }
+
+    .category div{
+        width: 100%;
+    }
+
+    .category div a{
+        font-size: 1.4rem;
+        width: 30%;
+        padding: .8rem 0;
+    }
+
+    .category div a::before{
+        transform: skewX(-35deg) translate(-60%, -50%);
+    }
+
+    .campaign{
+        padding: 4.8rem 0;
+    }
+
+    .campaign .wrap{
+        width: 85.33%;
+    }
+
+    .campaign .wrap h2{
+        font-size: 2.4rem;
+        line-height: 1;
+        padding-bottom: .7rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .campaign .wrap h2 small{
+        font-size: 1.4rem;
+    }
+
+    .campaign .wrap h2::before{
+        width: 21.6rem;
+    }
+
+    .campaign .wrap .tabs{
+        flex-direction: column-reverse;
+    }
+
+    .campaign .wrap .tabs .tablist{
+        width: 100%;
+    }
+
+    .campaign .wrap .tabs .tablist .tab{
+        width: 100%;
+        justify-content: flex-start;
+        border: none;
+    }
+
+    .campaign .wrap .tabs .tablist .tab div{
+        width: 9.3rem;
+        height: 6.3rem;
+        border-radius: .5rem;
+        overflow: hidden;
+        margin-right: .8rem;
+        border: .1rem solid #D9D9D9;
+    }
+
+    .campaign .wrap .tabs .tablist .tab p{
+        color: white;
+        margin-right: .8rem;
+    }
+
+    .campaign .wrap .tabs .tablist .tab svg{
+        display: inline-block;
+    }
+
+    .campaign .wrap .tabs .tablist .tab path{
+        color: white;
+    }
+
+    .campaign .wrap .tabs .tabpanels{
+        width: 100%;
+        margin-bottom: 2.4rem;
+    }
+
+    .campaign .wrap .tabs .tabpanels .tabpanel{
+        flex-direction: column;
+    }
+
+    .campaign .wrap .tabs .tabpanels .tabpanel .left{
+        width: 100%;
+        margin-bottom: 2.4rem;
+    }
+
+    .campaign .wrap .tabpanel .left .image{
+        height: 12rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .campaign .wrap .tabpanel .left .txt{
+        padding: 2.8rem 2.1rem;
+    }
+
+    .campaign .wrap .tabpanel .left .txt > div{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .campaign .wrap .tabpanel .left .txt div > p{
+        margin-bottom: .8rem;
+    }
+
+    .campaign .wrap .tabpanel .left .txt .tags p{
+        margin-left: 0;
+        margin-right: .8rem;
+        padding: .8rem 1rem;
+    }
+
+    .campaign .wrap .tabpanel .right{
+        width: 100%;
+        height: 16.7rem;
+        font-size: 1.8rem;
+        padding: 0 1.6rem 1.6rem;
+    }
+
+    .campaign .wrap .tabpanel .right svg{
+        margin-left: 1.2rem;
+    }
+
+    .campaign:nth-child(4) .wrap .tabs .tablist .tab p{
+        color: #333333;
+    }
+
+    .campaign:nth-child(4) .wrap .tabs .tablist .tab path{
+        color: #333333;
+    }
+
+    .old{
+        padding: 4.8rem 0 5.4rem;
+    }
+
+    .old .wrap{
+        width: 85.33%;
+    }
+
+    .old .wrap h2{
+        font-size: 2.7rem;
+        text-align: center;
+        line-height: 1.3;
+        position: relative;
+        padding-bottom: .7rem;
+        margin-bottom: 4.2rem;
+    }
+
+    .old .wrap h2::before{
+        content: '';
+        position: absolute;
+        width: 18.4rem;
+        height: .05rem;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        background: #999999;
+    }
+
+    .old .wrap .content{
+        width: 100%;
+        margin-bottom: 5.8rem;
+    }
+
+    .old .wrap .content li{
+        padding-left: 0;
+        padding-bottom: 2.4rem;
+        margin-bottom: 2.4rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .old .wrap .content li > div{
+        margin-bottom: 1.6rem;
+    }
+    
+    .old .wrap .content li > div > p{
+        font-size: 1.4rem;
+    }
+    
+    .old .wrap .content .tags p{
+        font-size: 1.4rem;
+        padding: 1.2rem 1rem;
+        background: #999999;
+        margin-right: .8rem;
+        color: white;
+    }
+
+    .old .wrap .content h3{
+        font-size: 1.4rem;
+    }
+}

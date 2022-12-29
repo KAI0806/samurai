@@ -1,0 +1,157 @@
+.topicPath{
+    width: 75%;
+    margin: 3rem auto 6.4rem;
+}
+
+.topicPath a{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #999999;
+}
+
+.topicPath p{
+    font-weight: bold;
+}
+
+.topicPath p:nth-child(2), .topicPath p:nth-child(4){
+    margin: 0 3rem;
+}
+
+/* faq */
+.faq .wrap{
+    width: 62.5%;
+}
+
+.faq .wrap h1{
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 4.2rem;
+    border-bottom: .1rem solid #707070;
+    margin-bottom: 4.2rem;
+}
+
+.faq .wrap .anchor{
+    align-items: center;
+}
+
+.faq .wrap .anchor a{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    background: #999999;
+    padding: 1rem 2.4rem;
+    margin-right: 2.4rem;
+}
+
+
+/* content */
+.faq .wrap .content{
+    padding-top: 4.4rem;
+}
+
+.faq .wrap .content h2{
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding-left: 3.6rem;
+    margin-bottom: 4.4rem;
+    position: relative;
+}
+
+.faq .wrap .content h2::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1.2rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) skewY(-25deg);
+    background: #1A3491;
+}
+
+.faq .wrap .content div{
+    align-items: center;
+    padding-left: 3.8rem;
+    padding-bottom: 1.8rem;
+    margin-bottom: 3.2rem;
+    border-bottom: .05rem solid #333333;
+}
+
+.faq .wrap .content div p:first-child{
+    padding: 1rem 2rem;
+    margin-right: 2.4rem;
+    color: white;
+}
+
+.faq .wrap .content .que p:first-child{
+    background: #999999;
+}
+
+.faq .wrap .content .ans p:first-child{
+    background: #D41C1C;
+}
+
+.faq .wrap .content div p a{
+    color: #1956A6;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px){
+    .topicPath{
+        width: 85.33%;
+        margin: 1.8rem auto;
+    }
+
+    .topicPath a, .topicPath p{
+        font-size: 1.4rem;
+    }
+
+    .topicPath p:nth-child(2), .topicPath p:nth-child(4){
+        margin: 0 .8rem;
+    }
+
+    .faq .wrap{
+        width: 85.33%;
+    }
+
+    .faq .wrap h1{
+        font-size: 2.7rem;
+        padding-bottom: 2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .faq .wrap .anchor{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .faq .wrap .anchor a{
+        margin-bottom: .8rem;
+        padding: .4rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .faq .wrap .content{
+        padding-top: 3rem;
+    }
+
+    .faq .wrap .content h2{
+        font-size: 1.8rem;
+        padding-left: 2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .faq .wrap .content h2::before{
+        width: .7rem;
+    }
+
+    .faq .wrap .content div{
+        padding-left: 0;
+        padding-bottom: 2.8rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .faq .wrap .content div p:first-child{
+        padding: .2rem 1.5rem;
+        margin-right: .8rem;
+    }
+}

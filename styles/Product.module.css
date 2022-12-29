@@ -1,0 +1,292 @@
+.kv{
+    flex-direction: column;
+}
+
+.kv .title{
+    width: 75%;
+    height: 14rem;
+    background: url('/images/common/kv_bg.svg') no-repeat center center/cover;
+}
+
+.kv .title h1{
+    font-size: 4.2rem;
+    text-align: center;
+    font-weight: bold;
+    list-style: .8;
+    padding-bottom: 1.1rem;
+    border-bottom: .05rem solid #999999;
+}
+
+.kv .title h1 small{
+    font-size: 1.8rem;
+    color: #1A3491;
+}
+
+.kv .topicPath{
+    width: 75%;
+    margin: 4.9rem 0;
+}
+
+.kv .topicPath a{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #999999;
+}
+
+.kv .topicPath p{
+    font-weight: bold;
+}
+
+.kv .topicPath p:nth-child(2), .kv .topicPath p:nth-child(4){
+    margin: 0 3rem;
+}
+
+.mv{
+    position: relative;
+}
+
+.mv h2{
+    position: absolute;
+    font-size: 4.2rem;
+    font-weight: bold;
+    border-bottom: 1.8rem solid #1A3491;
+    top: 1.6rem;
+    left: 22.3rem;
+    z-index: 10;
+}
+
+.mv p{
+    position: absolute;
+    top: 50%;
+    left: 26rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: .5rem;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    transform: translateY(-40%);
+    height: max-content;
+    z-index: 10;
+}
+
+
+/* details */
+.details{
+    padding: 8.52rem 0 5.8rem;
+    position: relative;
+}
+
+.details::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 80.46rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url('/images/top/campaign_bg.svg') no-repeat center center/cover;
+}
+
+.details::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 85rem;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    background: url('/images/top/product_bg.svg') no-repeat center center/cover;
+}
+
+.details .wrap{
+    width: 70%;
+}
+
+.details .wrap .content{
+    margin-bottom: 8.8rem;
+}
+
+.details .wrap .content .left{
+    width: 22%;
+    margin-right: 17.2rem;
+}
+
+.details .wrap .content .right{
+    width: 52%;
+}
+
+.details .wrap .content .right h2{
+    font-size: 4.2rem;
+    font-weight: bold;
+    border-bottom: 1.8rem solid #1A3491;
+    margin-bottom: 7.2rem;
+}
+
+.details .wrap .content .right h3{
+    font-size: 3.4rem;
+    font-weight: bold;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin-bottom: 5.8rem;
+}
+
+.details .wrap .content .right p{
+    white-space: pre-wrap;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 5.3rem;
+}
+
+.details .wrap .content .right .contain{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+}
+
+.details .wrap .content .right .contain .accordionitem{
+    width: 48%;
+    border-bottom: none;
+}
+
+.details .wrap .content .right .contain .accordionbutton{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to bottom, #181D65, #1956A6);
+    padding: 1.8rem 0;
+    width: 100%;
+    border-radius: .4rem;
+    justify-content: center;
+    position: relative;
+}
+
+.details .wrap .content .right .contain .accordionbutton svg{
+    position: absolute;
+    right: 5rem;
+    width: 3rem;
+    height: 3.3rem;
+}
+
+.details .wrap .content .right .contain .accordionbutton svg path{
+    color: white;
+}
+
+.details .wrap .content .right .contain .accordionitem p{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px){
+    .kv .title{
+        width: 100%;
+        height: 9.3rem;
+        background: url('/images/common/kv_bg_sp.svg') no-repeat center center/125%;
+    }
+
+    .kv .title h1{
+        font-size: 2.7rem;
+        line-height: 1;
+        padding-bottom: .6rem;
+        width: 19rem;
+    }
+
+    .kv .title h1 small{
+        font-size: 1.4rem;
+    }
+
+    .kv .topicPath{
+        width: 85.33%;
+        margin: 1.8rem 0;
+    }
+
+    .kv .topicPath a, .kv .topicPath p{
+        font-size: 1.4rem;
+    }
+
+    .kv .topicPath p:nth-child(2), .kv .topicPath p:nth-child(4){
+        margin: 0 .8rem;
+    }
+
+    .mv{
+        margin-top: 6rem;
+    }
+
+    .mv h2{
+        font-size: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        top: -5rem;
+        border-bottom: .8rem solid #1A3491;
+    }
+
+    .mv p{
+        font-size: 2rem;
+        top: 15rem;
+        left: 9rem;
+        letter-spacing: 0;
+        transform: rotateZ(-27deg);
+    }
+
+    .details{
+        padding: 4.6rem 0;
+    }
+
+    .details .wrap{
+        width: 85.33%;
+    }
+
+    .details .wrap .content{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    .details .wrap .content .left{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2.6rem;
+    }
+
+    .details .wrap .content .left img{
+        width: 15.3rem;
+    }
+
+    .details .wrap .content .right{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .details .wrap .content .right h2{
+        font-size: 1.9rem;
+        margin-bottom: 1.6rem;
+        border-bottom: .8rem solid #1956A6;
+    }
+
+    .details .wrap .content .right h3{
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .details .wrap .content .right > p{
+        white-space: normal;
+        line-height: 1.8;
+        margin-bottom: 3.6rem;
+    }
+
+    .details .wrap .content .right .contain{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .details .wrap .content .right .contain div{
+        width: 100%;
+    }
+
+    .details .wrap .content .right .contain div:first-child{
+        margin-bottom: 1.8rem;
+    }
+
+    .details .wrap .content .right .contain .accordionitem{
+        width: 100%;
+    }
+}

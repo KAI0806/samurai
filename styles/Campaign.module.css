@@ -1,0 +1,230 @@
+.topicPath{
+    width: 75%;
+    margin: 3rem auto 6.4rem;
+}
+
+.topicPath a{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #999999;
+}
+
+.topicPath p{
+    font-weight: bold;
+}
+
+.topicPath p:nth-child(2), .topicPath p:nth-child(4){
+    margin: 0 3rem;
+}
+
+
+/* campaign */
+.campaign{
+    margin-bottom: 14.4rem;
+}
+
+.campaign .wrap{
+    width: 65%;
+}
+
+.campaign .wrap .title{
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.campaign .wrap .title h1{
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 3.6rem;
+    margin-bottom: 3.4rem;
+    border-bottom: .1rem solid #707070;
+}
+
+.campaign .wrap .title .content{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.campaign .wrap .title .content .tags{
+    margin-bottom: 2.6rem;
+}
+
+.campaign .wrap .title .content .tags p{
+    font-size: 1.4rem;
+    padding: 1.2rem 1rem;
+    background: #999999;
+    margin-right: .8rem;
+    color: white;
+}
+
+.campaign .wrap .title .content .tags .new{
+    background: #F2182A;
+}
+
+.campaign .wrap .title .content .left > p{
+    font-weight: bold;
+}
+
+.campaign .wrap .title .content .right{
+    border: .1rem solid #D9D9D9;
+    border-radius: 3.2rem;
+    padding: 1.4rem 5.6rem;
+    align-items: center;
+}
+
+.campaign .wrap .title .content .right p{
+    color: #D9D9D9;
+    font-weight: bold;
+    margin-right: 2.8rem;
+}
+
+.campaign .wrap .title .content .right a{
+    margin-right: 2.8rem;
+}
+
+.campaign .wrap .title .content .right a path{
+    color: #1A3491;
+}
+
+.campaign .wrap .title .content .right a:last-child{
+    margin-right: 0;
+}
+
+/* container */
+.container{
+    margin-bottom: 14.4rem;
+}
+
+.container .mv{
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 9.6rem;
+    overflow: hidden;
+}
+
+.container .mv img{
+    object-fit: cover;
+}
+
+.container h2{
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding-left: 3.6rem;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.container h2::before{
+    position: absolute;
+    content: '';
+    width: 1.2rem;
+    height: 3rem;
+    top: 0;
+    left: 0;
+    transform: skewY(-25deg);
+    background: #1A3491;
+}
+
+.container p{
+    line-height: 1.8;
+    margin-bottom: 5rem;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 767px){
+    .topicPath{
+        width: 85.33%;
+        margin: 1.8rem auto;
+    }
+
+    .topicPath a, .topicPath p{
+        font-size: 1.4rem;
+    }
+
+    .topicPath p:nth-child(2), .topicPath p:nth-child(4){
+        margin: 0 .8rem;
+    }
+
+    .campaign{
+        margin-bottom: 0;
+    }
+
+    .campaign .wrap{
+        width: 85.33%;
+    }
+
+    .campaign .wrap .title{
+        margin-bottom: 3.2rem;
+    }
+
+    .campaign .wrap .title h1{
+        font-size: 2.7rem;
+        padding-bottom: 1.8rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .campaign .wrap .title .content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .campaign .wrap .title .content .left{
+        margin-bottom: 1.6rem;
+    }
+
+    .campaign .wrap .title .content .left .tags{
+        margin-bottom: 1.6rem;
+    }
+
+    .campaign .wrap .title .content .left .tags p{
+        font-size: 1.2rem;
+        padding: .5rem .7rem;
+    }
+
+    .campaign .wrap .title .content .left > p{
+        font-size: 1.2rem;
+    }
+
+    .campaign .wrap .title .content .right{
+        padding: 1.2rem 2.4rem;
+    }
+
+    .campaign .wrap .title .content .right p{
+        font-size: 1.4rem;
+        margin-right: 1.4rem;
+    }
+
+    .campaign .wrap .title .content .right a{
+        margin-right: 1.2rem;
+    }
+
+    .campaign .wrap .title .content .right a svg{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .campaign .wrap .container{
+        margin-bottom: 0;
+    }
+
+    .campaign .wrap .container .mv{
+        height: fit-content;
+        margin-bottom: 3.8rem;
+    }
+
+    .campaign .wrap .container h2{
+        font-size: 1.8rem;
+        padding-left: 1.6rem;
+        line-height: 1.5;
+        margin-bottom: 4rem;
+    }
+
+    .campaign .wrap .container h2::before{
+        width: .8rem;
+        height: 100%;
+    }
+
+    .campaign .wrap .container p{
+        margin-bottom: 5.2rem;
+    }
+}

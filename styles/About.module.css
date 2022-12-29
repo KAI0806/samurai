@@ -1,0 +1,388 @@
+.kv{
+    flex-direction: column;
+}
+
+.kv .title{
+    width: 75%;
+    height: 14rem;
+    background: url('/images/common/kv_bg.svg') no-repeat center center/cover;
+}
+
+.kv .title h1{
+    font-size: 4.2rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: .8;
+    padding-bottom: 1.1rem;
+    border-bottom: .05rem solid #999999;
+}
+
+.kv .title h1 small{
+    font-size: 1.8rem;
+    color: #1A3491;
+}
+
+.kv .topicPath{
+    width: 75%;
+    margin: 4.2rem 0;
+}
+
+.kv .topicPath a{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #999999;
+}
+
+.kv .topicPath p{
+    font-weight: bold;
+}
+
+.kv .topicPath p:nth-child(2){
+    margin: 0 3rem;
+}
+
+/* about */
+.about{
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 15.3rem;
+}
+
+.about::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 82.26rem;
+    background: url('/images/top/product_bg.svg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+.about > a{
+    position: absolute;
+    bottom: 9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #172A88;
+}
+
+.about > a::before{
+    content: '';
+    position: absolute;
+    bottom: -.95rem;
+    left: 50%;
+    transform: translate(-100%, 100%);
+    width: 1.335rem;
+    height: 5.545rem;
+    background: url('/images/top/down_arrow.svg') no-repeat center center/100%;
+}
+
+.about h2{
+    font-size: 4.2rem;
+    font-weight: bold;
+    line-height: .8;
+    width: 75%;
+    padding-left: 4.2rem;
+    position: relative;
+    padding-bottom: 1.1rem;
+    margin-bottom: 2.1rem;
+}
+
+.about h2::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 4.2rem;
+    width: 35.2rem;
+    height: .05rem;
+    background: #999999;
+}
+
+.about h2 small{
+    font-size: 1.8rem;
+    color: #1A3491;
+}
+
+.about .wrap{
+    width: 71%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.about .wrap .content{
+    width: 62.22%;
+    padding: 18rem 7.2rem;
+    border: .1rem solid #D9D9D9;
+    position: relative;
+    background: white;
+}
+
+.about .wrap .content::before{
+    content: '';
+    position: absolute;
+    top: 3rem;
+    left: -10rem;
+    width: 34.3rem;
+    height: 88%;
+    background: #172A88;
+    transform: skewY(-8deg);
+    z-index: -1;
+}
+
+.about .wrap .content::after{
+    content: '';
+    position: absolute;
+    top: 3rem;
+    right: -10rem;
+    width: 34.3rem;
+    height: 88%;
+    background: black;
+    transform: skewY(-8deg);
+    z-index: -1;
+}
+
+.about .wrap .content h3{
+    font-size: 3.2rem;
+    color: #1A3491;
+    font-weight: bold;
+    margin-bottom: 3.6rem;
+}
+
+.about .wrap .content p{
+    margin-bottom: 4.8rem;
+    line-height: 1.8;
+}
+
+.about .wrap .content p:last-child{
+    margin-bottom: 0;
+}
+
+/* comapny */
+.company{
+    background: black;
+    flex-direction: column;
+    padding: 9.2rem 0 10.2rem;
+}
+
+.company h2{
+    font-size: 4.2rem;
+    font-weight: bold;
+    color: white;
+    width: 66.875%;
+    margin-bottom: 2.4rem;
+    line-height: .8;
+    padding-bottom: 1.2rem;
+    position: relative;
+}
+
+.company h2::before{
+    position: absolute;
+    content: '';
+    width: 35.2rem;
+    height: .05rem;
+    background: white;
+    bottom: 0;
+    left: 0;
+}
+
+.company h2 small{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.company .wrap{
+    width: 66.875%;
+    justify-content: space-between;
+}
+
+.company .wrap .left{
+    width: 40%;
+}
+
+.company .wrap .left p{
+    color: white;
+    text-align: center;
+    margin-top: 2.62rem;
+}
+
+.company .wrap .right{
+    width: 54.35%;
+}
+
+.company .wrap .right p{
+    color: white;
+    line-height: 1.8;
+}
+
+.company .wrap .right p+p{
+    margin-top: 6rem;
+}
+
+.company .wrap .right a{
+    margin-top: 10rem;
+}
+
+@media screen and (max-width: 767px){
+    .kv .title{
+        width: 100%;
+        height: 9.3rem;
+        background: url('/images/common/kv_bg_sp.svg') no-repeat center center/cover;
+    }
+
+    .kv .title h1{
+        font-size: 2.7rem;
+        line-height: 1;
+        padding-bottom: .6rem;
+        width: 18rem;
+    }
+
+    .kv .title h1 small{
+        font-size: 1.4rem;
+    }
+
+    .kv .topicPath{
+        width: 85.33%;
+        margin: 1.8rem 0;
+    }
+
+    .kv .topicPath a, .kv .topicPath p{
+        font-size: 1.4rem;
+    }
+
+    .kv .topicPath p:nth-child(2){
+        margin: 0 .8rem;
+    }
+
+    /* about */
+    .about{
+        padding: 4rem 0 8rem;
+    }
+
+    .about::after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 80.46rem;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        background: url('/images/top/campaign_bg.svg') no-repeat center center/cover;
+    }
+
+    .about h2{
+        width: 85.33%;
+        padding-left: 1.6rem;
+        font-size: 2.7rem;
+        padding-bottom: .62rem;
+        margin-bottom: 1.48rem;
+        border-left: .7rem solid #1A3491;
+    }
+
+    .about h2::before{
+        width: 24rem;
+        left: 1.6rem;
+    }
+
+    .about h2 span{
+        font-size: 1.6rem;
+    }
+
+    .about h2 small{
+        font-size: 1.4rem;
+    }
+
+    .about .wrap{
+        width: 85.33%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about > a{
+        display: none;
+    }
+
+    .about .wrap > img{
+        width: 66%;
+        margin-bottom: 6.42rem;
+    }
+
+    .about .wrap .content{
+        width: 100%;
+        padding: 4.8rem 1.8rem;
+    }
+
+    .about .wrap .content::before{
+        width: 90%;
+        height: 31rem;
+        top: -3.22rem;
+        transform: skewX(8deg);
+        left: 0;
+    }
+
+    .about .wrap .content::after{
+        width: 90%;
+        height: 31rem;
+        top: unset;
+        bottom: -3.22rem;
+        transform: skewX(8deg);
+        right: 0;
+    }
+
+    .about .wrap .content h3{
+        font-size: 1.88rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .about .wrap .content p{
+        margin-bottom: 2.8rem;
+    }
+
+    /* company */
+    .company{
+        padding: 4.2rem 0 6rem;
+    }
+
+    .company h2{
+        font-size: 2.7rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .company h2 small{
+        font-size: 1.4rem;
+    }
+
+    .company h2::before{
+        width: 24rem;
+    }
+
+    .company .wrap{
+        flex-direction: column;
+        width: 85.33%;
+    }
+
+    .company .wrap .left{
+        width: 100%;
+        margin-bottom: 4.2rem;
+    }
+
+    .company .wrap .left p{
+        margin-top: 2.6rem;
+    }
+
+    .company .wrap .right{
+        width: 100%;
+    }
+
+    .company .wrap .right p+p{
+        margin-top: 4.4rem;
+    }
+
+    .company .wrap .right a{
+        margin-top: 6rem;
+    }
+}

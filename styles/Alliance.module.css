@@ -1,0 +1,108 @@
+.topicPath{
+    width: 75%;
+    margin: 3rem auto 6.4rem;
+}
+
+.topicPath a{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #999999;
+}
+
+.topicPath p{
+    font-weight: bold;
+}
+
+.topicPath p:nth-child(2), .topicPath p:nth-child(4){
+    margin: 0 3rem;
+}
+
+/* Alliance */
+.alliance .wrap{
+    width: 62.5%;
+}
+
+.alliance .wrap h1{
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 4.2rem;
+    margin-bottom: 4rem;
+    border-bottom: .1rem solid #707070;
+}
+
+.alliance .wrap div{
+    margin-bottom: 6.8rem;
+}
+
+.alliance .wrap div h2{
+    font-size: 3.4rem;
+    font-weight: bold;
+    padding-left: 3.6rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.alliance .wrap div h2::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 1.2rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) skewY(-25deg);
+    background: #1A3491;
+}
+
+.alliance .wrap div p{
+    margin-left: 3.6rem;
+}
+
+.alliance .wrap div p a{
+    color: #1956A6;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px){
+    .topicPath{
+        width: 85.33%;
+        margin: 1.8rem auto;
+    }
+
+    .topicPath a, .topicPath p{
+        font-size: 1.4rem;
+    }
+
+    .topicPath p:nth-child(2), .topicPath p:nth-child(4){
+        margin: 0 .8rem;
+    }
+
+    .alliance .wrap{
+        width: 85.33%;
+    }
+
+    .alliance .wrap h1{
+        font-size: 2.7rem;
+        padding-bottom: 2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .alliance .wrap div{
+        margin-bottom: 3.6rem;
+    }
+
+    .alliance .wrap div h2{
+        font-size: 1.8rem;
+        padding-left: 2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .alliance .wrap div h2::before{
+        width: .7rem;
+        height: 100%;
+    }
+
+    .alliance .wrap div p{
+        margin-left: 2rem;
+        line-height: 1.5;
+    }
+}
