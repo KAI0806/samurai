@@ -36,14 +36,14 @@ export default function MvSlider() {
             </div>
 
             <div className="slide slide02">
-                <Link href='/products/SAMURAI_ENERGY_DRINK' passHref>
-                    <a className='btn blue_btn'>VIEW MORE<span></span></a>
+                <Link href='https://sao-cp.samurai-energy.com' passHref>
+                    <a className='btn blue_btn' target="_blank" rel='noreferrer'>VIEW MORE<span></span></a>
                 </Link>
             </div>
 
             <div className="slide slide03">
-                <Link href='https://sao-cp.samurai-energy.com' passHref>
-                    <a className='btn blue_btn'>VIEW MORE<span></span></a>
+                <Link href='https://prtimes.jp/main/html/rd/p/000000004.000108769.html' passHref>
+                    <a className='btn white_btn' target="_blank" rel='noreferrer'>VIEW MORE<span></span></a>
                 </Link>
             </div>
         </Slider>

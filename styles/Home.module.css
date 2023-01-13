@@ -8,9 +8,9 @@
   position: absolute;
   left: 50%;
   bottom: 14rem;
+  z-index: 100;
   transform: translateX(-50%);
 }
-
 
 /* campaign */
 .campaign{

@@ -131,6 +131,14 @@
     white-space: pre-wrap;
 }
 
+.container a{
+    color: blue;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 767px){
     .topicPath{
         width: 85.33%;

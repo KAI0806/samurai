@@ -57,7 +57,7 @@ export default function Layout({children}) {
                         <li><Link href="/" passHref><a>TOP</a></Link></li>
                         <li><Link href="/about" passHref><a>企業情報</a></Link></li>
                         <li><Link href="/products/SAMURAI_ENERGY_DRINK" passHref><a>商品情報</a></Link></li>
-                        <li><Link href="/campaign" passHref><a>キャンペーン</a></Link></li>
+                        <li><Link href="https://sao-cp.samurai-energy.com" passHref><a target="_blank" rel='noreferrer'>キャンペーン</a></Link></li>
                         <li><Link href="/news" passHref><a>最新のお知らせ</a></Link></li>
                     </ul>
 

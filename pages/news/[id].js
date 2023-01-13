@@ -102,9 +102,8 @@ export default function Campaign({campaign}){
                                 <Image src={campaign.mv.url} alt={campaign.title} width='100%' height='auto'/>
                             </Center>
 
-                            <p>
-                                {campaign.description}
-                            </p>
+                            <div dangerouslySetInnerHTML={{__html:`${campaign.description}`}}>
+                            </div>
                         </div>
                     </div>
                 </Center>
