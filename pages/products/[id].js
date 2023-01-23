@@ -5,6 +5,7 @@ import { client } from "../../libs/client";
 import styles from '../../styles/Product.module.css'
 import Campaigns from "../../components/Campaigns";
 import { motion } from "framer-motion";
+import CampLinks from "../../components/CampLinks";
 
 export default function product({product}){
     return (
@@ -23,6 +24,7 @@ export default function product({product}){
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             >
+                <CampLinks/>
                 <Center as="section" className={styles.kv}>
                     <Center className={styles.title}>
                         <h1>

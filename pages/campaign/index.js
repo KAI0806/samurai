@@ -7,6 +7,7 @@ import { IconContext } from 'react-icons'
 import { IoIosArrowDroprightCircle } from 'react-icons/io'
 import OtherNews from "../../components/OtherNews";
 import { motion } from "framer-motion";
+import CampLinks from "../../components/CampLinks";
 
 export async function getStaticProps(){
     const campaignsData = await client.get({endpoint: 'campaign'})
@@ -50,6 +51,7 @@ export default function useCampaigns({campaigns}){
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             >
+                <CampLinks/>
                 <Center as="section" className={styles.kv}>
                     <Center className={styles.title}>
                         <h1>

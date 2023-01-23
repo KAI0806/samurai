@@ -8,6 +8,7 @@ import { FaInstagram, FaTwitter, FaLine } from "react-icons/fa";
 import { FiLink } from 'react-icons/fi'
 import OtherNews from "../../components/OtherNews";
 import { motion } from "framer-motion";
+import CampLinks from "../../components/CampLinks";
 
 
 export default function Campaign({campaign}){
@@ -27,6 +28,7 @@ export default function Campaign({campaign}){
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             >
+                <CampLinks/>
                 <Flex className={styles.topicPath}>
                     <Link href='/' passHref>
                         <motion.a

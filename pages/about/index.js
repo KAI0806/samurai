@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from '../../styles/About.module.css'
 import { motion } from "framer-motion";
+import CampLinks from "../../components/CampLinks";
 
 export default function About() {
     return (
@@ -21,6 +22,7 @@ export default function About() {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             >
+                <CampLinks/>
                 <Center as="section" className={styles.kv}>
                     <Center className={styles.title}>
                         <h1>

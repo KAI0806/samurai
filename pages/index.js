@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MvSlider from '../components/mvSlider';
 import { motion } from 'framer-motion';
+import CampLinks from '../components/CampLinks';
 
 export async function getStaticProps(){
   const infosData = await client.get({endpoint: 'news'})
@@ -47,6 +48,7 @@ export default function Home({infos, products, campaigns}) {
         breakpoint: 767,
           settings: {
             slidesToShow: 1.2,
+            autoplay: false,
         }
       },
     ],
@@ -68,6 +70,8 @@ export default function Home({infos, products, campaigns}) {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
       >
+        <CampLinks/>
+
         <section className={styles.mv}>
           <MvSlider className={styles.mvSlider}/>
         </section>

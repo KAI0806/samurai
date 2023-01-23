@@ -104,6 +104,7 @@
 
 .details .wrap .content{
     margin-bottom: 8.8rem;
+    align-items: flex-start;
 }
 
 .details .wrap .content .left{
@@ -118,6 +119,7 @@
 .details .wrap .content .right h2{
     font-size: 4.2rem;
     font-weight: bold;
+    padding-top: 2.2rem;
     border-bottom: 1.8rem solid #1A3491;
     margin-bottom: 7.2rem;
 }
@@ -258,6 +260,7 @@
 
     .details .wrap .content .right h2{
         font-size: 1.9rem;
+        padding-top: 0;
         margin-bottom: 1.6rem;
         border-bottom: .8rem solid #1956A6;
     }

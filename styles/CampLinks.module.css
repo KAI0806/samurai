@@ -1,0 +1,218 @@
+.camp_links{
+    position: fixed;
+    bottom: 11.2rem;
+    right: 0;
+    z-index: 200;
+}
+
+.container_pc a{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 25rem;
+    height: 16.6rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom, #161A59, #123491);
+    border: .5rem solid white;
+    border-right: 0;
+    border-radius: 4rem 0 0 4rem;
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+}
+
+.container_pc a small{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: -.3rem;
+}
+
+.container_pc a:first-child{
+    margin-bottom: .9rem;
+}
+
+.container_pc a::before{
+    position: absolute;
+    content: '';
+    width: 8.95rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.container_pc a:first-child::before{
+    position: absolute;
+    content: '';
+    width: 8.95rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url('/images/common/camp_link_bg01.svg') no-repeat center center/100%;
+}
+
+.container_pc a:nth-child(2)::before{
+    background: url('/images/common/camp_link_bg02.svg') no-repeat center center/100%;
+}
+
+.container_pc a::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    opacity: .3;
+    transition: all .3s ease-out;
+}
+
+.container_pc a:hover::after{
+    width: 100%;
+}
+
+.container_sp{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .camp_links{
+        position: fixed;
+        top: 50%;
+        right: 0;
+        bottom: unset;
+        width: 90.66%;
+        height: 65.5vh;
+        transition: all .5s ease-in-out;
+        transform:  translateX(87%) translateY(-50%);
+    }
+
+    .active{
+        transform: translateX(0) translateY(-50%);
+        transition: all .5s ease-in-out;
+    }
+
+    .cover{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    .cover_active{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        z-index: 80;
+        opacity: 1;
+        background: rgba(0, 0, 0, 56%);
+    }
+
+    .container_pc{
+        display: none;
+    }
+
+    .container_sp{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: flex-start;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        transition: all 1s ease-in-out;
+    }
+
+    .opener{
+        width: 9.7%;
+        padding: 3.4rem 0;
+        background: url('/images/common/opener.svg') no-repeat -.5rem center/auto 107%;
+    }
+
+    .opener p{
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .wrap{
+        position: relative;
+        width: 90.3%;
+        padding: 3.2rem 5.2rem 4.6rem 4rem;
+        border: .3rem solid white;
+        border-right: 0;
+        box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+        background: linear-gradient(to bottom, #101A56, #13338C);
+    }
+
+    .wrap::before{
+        position: absolute;
+        content: 'SPECIAL';
+        font-size: 6rem;
+        letter-spacing: .8rem;
+        font-weight: bold;
+        color: white;
+        opacity: .42;
+        bottom: 0;
+        left: 0;
+        transform: rotateZ(90deg) translate(-38%, 210%);
+    }
+
+    .close{
+        position: absolute;
+        top: 2.17rem;
+        right: 1.35rem;
+    }
+
+    .close svg path{
+        color: white;
+    }
+
+    .img_wrap{
+        width: 100%;
+        height: 14.6rem;
+        object-fit: cover;
+        overflow: hidden;
+        margin-bottom: 3.4rem;
+    }
+
+    .wrap h2{
+        font-size: 1.6rem;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 4.2rem;
+    }
+
+    .wrap a{
+        font-size: 1.2rem;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .wrap a::before{
+        width: 3.8rem;
+    }
+
+    .wrap a::after{
+        width: 1.5rem;
+        top: 40%;
+        right: -17%;
+    }
+
+    .wrap a:hover::after{
+        right: -20%;
+    }
+
+    .wrap a:last-child{
+        margin-top: 3.6rem;
+    }
+}

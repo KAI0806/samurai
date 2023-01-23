@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53.88" height="202" viewBox="0 0 53.88 202">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#101954"/>
+      <stop offset="1" stop-color="#13358f"/>
+    </linearGradient>
+    <filter id="パス_2397" x="0" y="0" width="53.88" height="202" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#パス_2397)">
+    <g id="パス_2397-2" data-name="パス 2397" transform="translate(9 25)" fill="url(#linear-gradient)">
+      <path d="M 34.8798942565918 163.2977142333984 L 0.9999890327453613 144.4125366210938 L 0.9999890327453613 0.6020079255104065 L 34.8798942565918 -17.33890342712402 L 34.8798942565918 163.2977142333984 Z" stroke="none"/>
+      <path d="M 33.87989044189453 -15.67781066894531 L 1.999992370605469 1.204010009765625 L 1.999992370605469 143.8251037597656 L 33.87989044189453 161.5954437255859 L 33.87989044189453 -15.67781066894531 M 35.87989044189453 -19 L 35.87989044189453 165 L -7.62939453125e-06 145 L -7.62939453125e-06 0 L 35.87989044189453 -19 Z" stroke="none" fill="#fff"/>
+    </g>
+  </g>
+</svg>

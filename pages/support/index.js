@@ -4,6 +4,7 @@ import styles from '../../styles/Support.module.css'
 import Link from "next/link";
 import Supports from "../../components/Supports";
 import { motion } from "framer-motion";
+import CampLinks from "../../components/CampLinks";
 
 
 export default function Support(){
@@ -23,6 +24,7 @@ export default function Support(){
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             >
+                <CampLinks/>
                 <Center as="section" className={styles.kv}>
                     <Center className={styles.title}>
                         <h1>

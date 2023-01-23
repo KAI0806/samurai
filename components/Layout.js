@@ -4,12 +4,19 @@ import { NavData } from "./NavData";
 import { IconContext } from 'react-icons'
 import { FaInstagram, FaTwitter } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import { useState } from "react";
 
 function getYear() {
     return new Date().getFullYear();
   };
 
 export default function Layout({children}) {
+    const [active, setActive] = useState(true)
+
+    const classToggle = () => {
+        setActive(!active)
+    }
+
     return (
         <>
             <Flex as='header'>
@@ -49,7 +56,7 @@ export default function Layout({children}) {
                 </Flex>
             </Flex>
 
-            <nav id='nav' className='sp_only'>
+            <nav id='nav' className={active ? 'sp_only' : 'sp_only in'} onClick={classToggle}>
                 <div className='nav_wrap'>
                     <Image src='/images/common/logo.svg' alt='ロゴ' width='25rem'/>
 
@@ -74,10 +81,10 @@ export default function Layout({children}) {
                 </div>
             </nav>
 
-            <div id='hamburger' className='sp_only'>
-                <span id='line1' className='inner_line'></span>
-                <span id='line2' className='inner_line'></span>
-                <span id='line3' className='inner_line'></span>
+            <div id='hamburger' className='sp_only' onClick={classToggle}>
+                <span id='line1' className={active ? 'inner_line' : 'inner_line line_1'}></span>
+                <span id='line2' className={active ? 'inner_line' : 'inner_line line_2'}></span>
+                <span id='line3' className={active ? 'inner_line' : 'inner_line line_3'}></span>
             </div>
 
             {children}
