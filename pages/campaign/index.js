@@ -104,7 +104,7 @@ export default function useCampaigns({campaigns}){
                                     <TabPanel className={styles.tabpanel} key={campaign.id}>
                                         <div className={styles.left}>
                                             <Link href={campaign.link} passHref>
-                                                <a className={styles.image}>
+                                                <a className={styles.image} target="_blank" rel='noreferrer'>
                                                     <Image src={campaign.Media.url} alt={campaign.title} with='auto' height='auto'/>
                                                 </a>
                                             </Link>
@@ -120,11 +120,7 @@ export default function useCampaigns({campaigns}){
                                                     </Flex>
                                                 </Flex>
 
-                                                <p>
-                                                    {campaign.subTitle > 48 ||(
-                                                        campaign.subTitle.substring(0, 48)+'…'                    
-                                                    )}
-                                                </p>
+                                                <p>{campaign.subTitle}</p>
                                             </div>
                                         </div>
 
@@ -132,9 +128,7 @@ export default function useCampaigns({campaigns}){
                                             <div>
                                                 <Image src={campaign.subMedia.url} alt={campaign.title} width='auto' height='100%'/>
                                             </div>
-                                            {campaign.title > 18 ||(
-                                                campaign.title.substring(0, 18)+'…'                    
-                                            )}
+                                            <p>{campaign.title}</p>
                                         </div>
                                     </TabPanel>
                                 ))}
@@ -145,7 +139,7 @@ export default function useCampaigns({campaigns}){
 
                 <Center as="section" id="old" className={styles.old}>
                     <div className={styles.wrap}>
-                        <h2>
+                        {/* <h2>
                             終了したキャンペーン<br/>
                             <small>CAMPAIGN #OLD EVENT</small>
                         </h2>
@@ -156,16 +150,13 @@ export default function useCampaigns({campaigns}){
                                     <Flex>
                                         <p>{new Date(old.publishedAt).toLocaleDateString()}</p>
                                         <Flex className={styles.tags}>
-                                            {/* {old.tag.map((value, key) =>(
-                                                <p key={key}>{value}</p>
-                                            ))} */}
                                             <p>OLD</p>
                                         </Flex>
                                     </Flex>
                                     <h3>{old.title}</h3>
                                 </Flex>
                             ))}
-                        </ul>
+                        </ul> */}
                         <OtherNews/>
                     </div>
                 </Center>

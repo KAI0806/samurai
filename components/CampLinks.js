@@ -17,13 +17,13 @@ export default function CampLinks() {
             <div className={active ? `${styles.camp_links}` : `${styles.camp_links} ${styles.active}`}>
                 <div className={styles.container_pc}>
                     <Link href='https://samuraienergy-sao.stores.jp/' passHref>
-                        <a>
+                        <a target="_blank" rel='noreferrer'>
                             <small>ソードアート・オンライン</small>
                             コラボはこちら
                         </a>
                     </Link>
                     <Link href='https://repezenfoxx-samuraienergy.square.site/' passHref>
-                        <a>
+                        <a target="_blank" rel='noreferrer'>
                             Repezen Foxx<br/>
                             コラボはこちら
                         </a>

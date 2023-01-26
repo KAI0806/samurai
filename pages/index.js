@@ -97,7 +97,7 @@ export default function Home({infos, products, campaigns}) {
             <Slider className={styles.right} {...settings}>
               {campaigns.slice(0, 5).map((campaign) =>(
                 <Link href={campaign.link} key={campaign.id} passHref>
-                  <a className={styles.content}>
+                  <a className={styles.content} target="_blank" rel='noreferrer'>
                     <Center className={styles.image}>
                       <Image src={getMediaURL(campaign.thumbnail.url)} alt={campaign.title} width='auto' height='100%'/>
                     </Center>
@@ -117,11 +117,7 @@ export default function Home({infos, products, campaigns}) {
                         <p className={styles.date}>XXXX.XX.XX</p>
                       )}
                       
-                      <h4>
-                        {campaign.subTitle > 15 ||(
-                          campaign.subTitle.substring(0, 15)+'…'                    
-                        )}
-                      </h4>
+                      <h4>{campaign.subTitle}</h4>
                       <p>{campaign.product}</p>
                     </div>
                   </a>
@@ -161,23 +157,35 @@ export default function Home({infos, products, campaigns}) {
                 </Link>
               ))}
 
-              <div className={styles.contain}>
-                <Center className={styles.image}>
-                  <Image src='/images/top/product02.svg' alt='カミングスーン' width='auto' height='100%'/>
-                </Center>
-                <div className={styles.txt}>
-                  
-                </div>
-              </div>
+              <Link href='https://repezenfoxx-samuraienergy.square.site/' passHref>
+                <a className={styles.contain} target="_blank" rel='noreferrer'>
+                  <Center className={styles.image}>
+                    <Image src='/images/top/mv_bg04.webp' alt='「Repezen Foxx」が国産エナジードリンク 「SAMURAIENERGY」をジャック!' width='auto' height='100%'/>
+                  </Center>
 
-              <div className={styles.contain}>
-                <Center className={styles.image}>
-                  <Image src='/images/top/product02.svg' alt='カミングスーン' width='auto' height='100%'/>
-                </Center>
-                <div className={styles.txt}>
-                  
-                </div>
-              </div>
+                  <div className={styles.txt}>
+                    <h3>
+                      レペゼンフォックスコラボ<br/>
+                      <span>Repezen Foxx</span>
+                    </h3>
+                  </div>
+                </a>
+              </Link>
+              
+              <Link href='https://samuraienergy-sao.stores.jp/' passHref>
+                <a className={styles.contain} target="_blank" rel='noreferrer'>
+                  <Center className={styles.image}>
+                    <Image src='https://images.microcms-assets.io/assets/5bcdc669e3454adaa1a700d0bac649bd/0357f0eba82841f28484f3da5c91c634/%E3%83%9E%E3%82%B9%E3%82%AF%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A%201587.jpg' alt='SAOコラボ' width='auto' height='100%'/>
+                  </Center>
+
+                  <div className={styles.txt}>
+                    <h3>
+                      ソードアート・オンライン<br/>
+                      <span>SWORD ART ONLINE</span>
+                    </h3>
+                  </div>
+                </a>
+              </Link>
             </Slider>
           </Center>
         </Center>
@@ -209,11 +217,7 @@ export default function Home({infos, products, campaigns}) {
                       <p className={styles.date}>XXXX.XX.XX</p>
                     )}
                     
-                    <h4>
-                      {info.title > 17 ||(
-                        info.title.substring(0, 14)+'…'                    
-                      )}
-                    </h4>
+                    <h4>{info.title}</h4>
                     {/* <p>
                       {info.description > 38 ||(
                         info.description.substring(0, 37)+'…'                    

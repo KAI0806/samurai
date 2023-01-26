@@ -190,6 +190,18 @@ export default function Layout({children}) {
                                         whileHover={{textDecoration: 'underline'}}>-サムライエナジードリンク</motion.a>
                                 </Link>
                             </li>
+                            <li>
+                                <Link href='https://samuraienergy-sao.stores.jp/' passHref>
+                                    <motion.a
+                                        whileHover={{textDecoration: 'underline'}}>-ソードアート・オンライン コラボ缶</motion.a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href='https://repezenfoxx-samuraienergy.square.site/' passHref>
+                                    <motion.a
+                                        whileHover={{textDecoration: 'underline'}}>-レペゼンフォックスコラボ</motion.a>
+                                </Link>
+                            </li>
                         </ul>
 
                         <ul>

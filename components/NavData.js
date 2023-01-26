@@ -9,7 +9,7 @@ export const NavData =[
     },
     {
         title: 'CAMPAIGN',
-        url: 'https://sao-cp.samurai-energy.com',
+        url: '/campaign',
     },
     {
         title: 'NEWS',
