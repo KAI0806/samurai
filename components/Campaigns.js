@@ -83,7 +83,7 @@ export default function Campaigns(){
                 <Link href='/campaign' passHref>
                     <a className='content'>
                         <Center className='image'>
-                            <Image src='https://images.microcms-assets.io/assets/5bcdc669e3454adaa1a700d0bac649bd/e812e0c611bb4a8f9b8a9efb3ace0ed0/mv.jpg' alt='サンプル' width='auto' height='100%'/>
+                            <Image src='https://images.microcms-assets.io/assets/5bcdc669e3454adaa1a700d0bac649bd/435ee68ed0dc4305bd06a923e27445af/samurai-energy_banner.webp' alt='サンプル' width='auto' height='100%'/>
                         </Center>
 
                         <div className='txt'>

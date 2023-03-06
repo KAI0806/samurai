@@ -64,19 +64,23 @@
     margin-bottom: 2.6rem;
 }
 
-.form .wrap label{
+.form .wrap .label{
     font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     display: inline-block;
 }
 
-.form .wrap label span{
+.form .wrap .label span{
     color: #F2182A;
 }
 
 .form .wrap .content div:first-child{
     margin-right: 3.2rem;
+}
+
+.form .wrap .content div label{
+    font-size: 1.4rem;
 }
 
 .form .wrap .content input{
@@ -96,6 +100,7 @@
 }
 
 .form .wrap .check{
+    font-size: 1.8rem;
     margin-bottom: 1.1rem;
 }
 
@@ -172,7 +177,7 @@
         margin-bottom: 2.6rem;
     }
 
-    .form .wrap label{
+    .form .wrap .label{
         font-size: 1.6rem;
         margin-bottom: .9rem;
     }
@@ -198,6 +203,7 @@
     }
 
     .form .wrap .check{
+        font-size: 1.6rem;
         margin-bottom: 1.3rem;
     }
 

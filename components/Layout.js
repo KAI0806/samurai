@@ -212,6 +212,18 @@ export default function Layout({children}) {
                                     <small>CAMPAIGN</small>
                                 </motion.a>
                             </Link>
+                            <li>
+                                <Link href='https://sao-cp.samurai-energy.com/' passHref>
+                                    <motion.a
+                                        whileHover={{textDecoration: 'underline'}}>-SAOコラボキャンペーン</motion.a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href='https://prtimes.jp/main/html/rd/p/000000004.000108769.html' passHref>
+                                    <motion.a
+                                        whileHover={{textDecoration: 'underline'}}>-Repezen Foxxコラボキャンペーン</motion.a>
+                                </Link>
+                            </li>
                         </ul>
 
                         <ul>
@@ -239,7 +251,6 @@ export default function Layout({children}) {
                             </li> */}
                         </ul>
                     </Flex>
-                    <Flex className="bottom"></Flex>
                 </div>
 
                 <Flex className="guide">

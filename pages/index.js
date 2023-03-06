@@ -136,7 +136,7 @@ export default function Home({infos, products, campaigns}) {
 
             <p data-aos="fade-up">
               高品質なメイド・イン・ジャパン エナジードリンク（国産エナジードリンク）<br/>
-              各種を取り扱っております
+              各種を取り扱っております。
             </p>
 
             <Slider className={styles.content} {...settings}>
@@ -160,7 +160,7 @@ export default function Home({infos, products, campaigns}) {
               <Link href='https://repezenfoxx-samuraienergy.square.site/' passHref>
                 <a className={styles.contain} target="_blank" rel='noreferrer'>
                   <Center className={styles.image}>
-                    <Image src='/images/top/mv_bg04.webp' alt='「Repezen Foxx」が国産エナジードリンク 「SAMURAIENERGY」をジャック!' width='auto' height='100%'/>
+                    <Image src='https://images.microcms-assets.io/assets/5bcdc669e3454adaa1a700d0bac649bd/114027a146f946c4805007170e357818/RepexenFoxx_%C3%97_SAMURAI_ENERGY.webp' alt='「Repezen Foxx」が国産エナジードリンク 「SAMURAIENERGY」をジャック!' width='auto' height='100%'/>
                   </Center>
 
                   <div className={styles.txt}>
@@ -175,7 +175,7 @@ export default function Home({infos, products, campaigns}) {
               <Link href='https://samuraienergy-sao.stores.jp/' passHref>
                 <a className={styles.contain} target="_blank" rel='noreferrer'>
                   <Center className={styles.image}>
-                    <Image src='https://images.microcms-assets.io/assets/5bcdc669e3454adaa1a700d0bac649bd/0357f0eba82841f28484f3da5c91c634/%E3%83%9E%E3%82%B9%E3%82%AF%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A%201587.jpg' alt='SAOコラボ' width='auto' height='100%'/>
+                    <Image src='https://images.microcms-assets.io/assets/5bcdc669e3454adaa1a700d0bac649bd/1fc8af82e75147d5877bfbb858d9c37a/SamuraiEnwrgy_SAO_thumbnail.webp' alt='SAOコラボ' width='auto' height='100%'/>
                   </Center>
 
                   <div className={styles.txt}>

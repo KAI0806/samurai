@@ -52,57 +52,57 @@ export default function Contact(){
                 <Center className={styles.form}>
                     <form className="formrun" action="https://form.run/api/v1/r/yjilu9njph2l0knzo8jelba6" method="post">
                         <div className={styles.wrap}>
-                            <label>名前 <span>*</span></label>
+                            <p className={styles.label}>名前 <span>*</span></p>
                             <Flex className={styles.content}>
                                 <div>
-                                    <input name="性" type="text" data-formrun-required/>
-                                    <p>姓</p>
+                                    <input id="firstName" name="性" type="text" data-formrun-required required='名字を入力してください。'/><br/>
+                                    <label htmlFor="firstName">姓</label>
                                 </div>
                                 <div>
-                                    <input name="名" type="text" data-formrun-required/>
-                                    <p>名</p>
+                                    <input id="secondName" name="名" type="text" data-formrun-required required='下のお名前を入力してください。'/><br/>
+                                    <label htmlFor="secondName">名</label>
                                 </div>
                             </Flex>
                         </div>
 
                         <Flex className={styles.wrap}>
-                            <label>メールアドレス <span>*</span></label>
-                            <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required/>
+                            <label className={styles.label} htmlFor="email">メールアドレス <span>*</span></label>
+                            <input id="email" name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required required='メールアドレスを入力してください。'/>
                         </Flex>
 
                         <Flex className={styles.wrap}>
-                            <label>電話番号（ハイフン無し）<span>*</span></label>
-                            <input name="電話番号（ハイフン無し）" type='text' data-formrun-type="tel" data-formrun-required/>
+                            <label className={styles.label} htmlFor="tel">電話番号（ハイフン無し）<span>*</span></label>
+                            <input id="tel" name="電話番号（ハイフン無し）" type='text' data-formrun-type="tel" data-formrun-required required='電話番号を入力してください。'/>
                         </Flex>
 
-                        <Flex className={styles.wrap}>
-                            <label>お問合せ種別 <span>*</span></label>
-                            <p className={styles.check}>
-                                <input type='checkbox' name="お問合せ種別"/>
+                        <Flex as='fieldset' className={styles.wrap}>
+                            <p className={styles.label}>お問合せ種別 <span>*</span></p>
+                            <label className={styles.check}>
+                                <input type='radio' value='サムライエナジーについて' name="お問合せ種別" data-formrun-required required/>
                                 サムライエナジーについて
-                            </p>
-                            <p className={styles.check}>
-                                <input type='checkbox' name="お問合せ種別"/>
+                            </label>
+                            <label className={styles.check}>
+                                <input type='radio' value='キャンペーン・応募に関して' name="お問合せ種別" data-formrun-required required/>
                                 キャンペーン・応募に関して
-                            </p>
-                            <p className={styles.check}>
-                                <input type='checkbox' name="お問合せ種別"/>
+                            </label>
+                            <label className={styles.check}>
+                                <input type='radio' value='協業・アライアンスについて' name="お問合せ種別" data-formrun-required required/>
                                 協業・アライアンスについて
-                            </p>
-                            <p className={styles.check}>
-                                <input type='checkbox' name="お問合せ種別"/>
+                            </label>
+                            <label className={styles.check}>
+                                <input type='radio' value='その他' name="お問合せ種別" data-formrun-required required/>
                                 その他
-                            </p>
+                            </label>
                         </Flex>
 
                         <Flex className={styles.wrap}>
-                            <label>お問い合わせ <span>*</span></label>
-                            <textarea name="お問い合わせ" data-formrun-required></textarea>
+                            <label htmlFor="descript" className={styles.label}>お問い合わせ <span>*</span></label>
+                            <textarea id="descript" name="お問い合わせ内容" data-formrun-required required='お問合せ内容を入力してください。'></textarea>
                         </Flex>
 
                         <div className="_formrun_gotcha" style={{position: 'absolute !important', height: '1px', with: '1px', overflow: 'hidden'}}>
-                            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-                            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1"/>
+                            <label htmlFor="_formrun_gotcha">If you are a human, ignore this field</label>
+                            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabIndex="-1"/>
                         </div>
 
                         <motion.button 
