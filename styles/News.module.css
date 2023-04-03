@@ -194,8 +194,13 @@
         align-items: flex-start;
     }
 
+    .news ul li a{
+        width: 100%;
+    }
+
     .news ul li div{
         margin-bottom: 1.6rem;
+        width: 100%;
     }
 
     .news ul li p{

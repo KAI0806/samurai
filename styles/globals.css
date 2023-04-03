@@ -753,7 +753,7 @@ footer .guide div a{
 
   .btn::after{
     width: 2rem;
-    right: -13%;
+    right: -15%;
   }
 
   .btn:hover::after{
@@ -993,6 +993,8 @@ footer .guide div a{
 
   .OtherNews{
     flex-direction: column;
+    width: 85.33%;
+    margin-inline: auto;
   }
 
   .OtherNews a{
