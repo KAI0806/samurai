@@ -23,6 +23,8 @@ export function getMediaURL(media){
 }
 
 export default function News({infos}){
+    const today = new Date();
+
     return (
         <>
             <Head>
@@ -66,21 +68,33 @@ export default function News({infos}){
                     </h2>
 
                     <ul>
-                       {infos.map((info) => (
-                        <Flex as='li' key={info.id}>
-                            <Flex>
-                                <p>{new Date(info.publishedAt).toLocaleDateString()}</p>
-                                <span className={styles.new}>NEW</span>
-                                <span>{info.tag}</span>
+                       {infos.map((info) => {
+                        let newTag = new Date(info.publishedAt)
+                        newTag.setDate(newTag.getDate() + 14)
+
+                        let upDate = new Date(info.updatedAt)
+                        upDate.setDate(upDate.getDate() + 14)
+
+                        return(
+                            <Flex as='li' key={info.id}>
+                                <Flex>
+                                    <p>{new Date(info.publishedAt).toLocaleDateString()}</p>
+                                    {newTag > today && (
+                                        <span className={styles.new}>NEW</span>
+                                    )}
+                                    {newTag < today && upDate > today &&(
+                                        <span className={styles.update}>更新</span>
+                                    )}
+                                    <span>{info.tag}</span>
+                                </Flex>
+                                
+                                <Link href={info.link} passHref>
+                                    <a>
+                                        {info.title}
+                                    </a>
+                                </Link>
                             </Flex>
-                            
-                            <Link href={info.link} passHref>
-                                <a>
-                                    {info.title}
-                                </a>
-                            </Link>
-                        </Flex>
-                       ))}
+                        )})}
                     </ul>
 
                     <div>

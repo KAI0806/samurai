@@ -12,6 +12,14 @@ import CampLinks from "../../components/CampLinks";
 
 
 export default function Campaign({campaign}){
+    const today = new Date();
+
+    let newTag = new Date(campaign.publishedAt)
+    newTag.setDate(newTag.getDate() + 14)
+
+    let upDate = new Date(campaign.updatedAt)
+    upDate.setDate(upDate.getDate() + 14)
+
     return (
         <>
             <Head>
@@ -50,7 +58,12 @@ export default function Campaign({campaign}){
                             <Flex className={styles.content}>
                                 <div className={styles.left}>
                                     <Flex className={styles.tags}>
-                                        <p className={styles.new}>NEW</p>
+                                        {newTag > today && (
+                                            <p className={styles.new}>NEW</p>
+                                        )}
+                                        {newTag < today && upDate > today &&(
+                                            <p className={styles.update}>更新</p>
+                                        )}
                                         {campaign.tag.map((value, key) =>(
                                             <p key={key}>{value}</p>
                                         ))}

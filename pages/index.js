@@ -54,6 +54,8 @@ export default function Home({infos, products, campaigns}) {
     ],
   };
 
+  const today = new Date();
+
   return (
     <>
       <Head>
@@ -95,34 +97,47 @@ export default function Home({infos, products, campaigns}) {
             </div>
 
             <Slider className={styles.right} {...settings}>
-              {campaigns.slice(0, 5).map((campaign) =>(
-                <Link href={campaign.link} key={campaign.id} passHref>
-                  <a className={styles.content} target="_blank" rel='noreferrer'>
-                    <Center className={styles.image}>
-                      <Image src={getMediaURL(campaign.thumbnail.url)} alt={campaign.title} width='auto' height='100%'/>
-                    </Center>
+              {campaigns.slice(0, 5).map((campaign) =>{
+                let newTag = new Date(campaign.publishedAt)
+                newTag.setDate(newTag.getDate() + 14)
 
-                    <div className={styles.txt}>
-                      <Flex className={styles.tags}>
-                        <p>NEW</p>
-                        {campaign.tag.map((value, key) =>(
-                          <p key={key}>{value}</p>
-                        ))}
-                      </Flex>
+                let upDate = new Date(campaign.updatedAt)
+                upDate.setDate(upDate.getDate() + 14)
 
-                      {campaign.subTitle !== "準備中" && (
-                        <p className={styles.date}>{new Date(campaign.publishedAt).toLocaleDateString()}</p>
-                      )}
-                      {campaign.subTitle == "準備中" && (
-                        <p className={styles.date}>XXXX.XX.XX</p>
-                      )}
-                      
-                      <h4>{campaign.subTitle}</h4>
-                      <p>{campaign.product}</p>
-                    </div>
-                  </a>
-                </Link>
-              ))}
+                return(
+                  <Link href={campaign.link} key={campaign.id} passHref>
+                    <a className={styles.content} target="_blank" rel='noreferrer'>
+                      <Center className={styles.image}>
+                        <Image src={getMediaURL(campaign.thumbnail.url)} alt={campaign.title} width='auto' height='100%'/>
+                      </Center>
+
+                      <div className={styles.txt}>
+                        <Flex className={styles.tags}>
+                          {newTag > today && (
+                            <p className={styles.new}>NEW</p>
+                          )}
+                          {newTag < today && upDate > today &&(
+                            <p className={styles.update}>更新</p>
+                          )}
+                          {campaign.tag.map((value, key) =>(
+                            <p key={key}>{value}</p>
+                          ))}
+                        </Flex>
+
+                        {campaign.subTitle !== "準備中" && (
+                          <p className={styles.date}>{new Date(campaign.publishedAt).toLocaleDateString()}</p>
+                        )}
+                        {campaign.subTitle == "準備中" && (
+                          <p className={styles.date}>XXXX.XX.XX</p>
+                        )}
+                        
+                        <h4>{campaign.subTitle}</h4>
+                        <p>{campaign.product}</p>
+                      </div>
+                    </a>
+                  </Link>
+                )
+              })}
             </Slider>
           </Flex>
         </section>
@@ -197,36 +212,49 @@ export default function Home({infos, products, campaigns}) {
           </h2>
 
           <Slider className={styles.wrap} {...settings}>
-            {infos.slice(0, 3).map((info) =>(
-              <Link href={info.link} key={info.id} passHref>
-                <a className={styles.content}>
-                  <Center className={styles.image}>
-                    <Image src={info.mv.url} alt={info.title} width='100%' height='17.6rem'/>
-                  </Center>
+            {infos.slice(0, 3).map((info) =>{
+              let newTag = new Date(info.publishedAt)
+              newTag.setDate(newTag.getDate() + 14)
 
-                  <div className={styles.txt}>
-                    <Flex className={styles.tags}>
-                      <p>NEW</p>
-                      <p>{info.tag}</p>
-                    </Flex>
+              let upDate = new Date(info.updatedAt)
+              upDate.setDate(upDate.getDate() + 14)
 
-                    {info.title !== "準備中" && (
-                      <p className={styles.date}>{new Date(info.publishedAt).toLocaleDateString()}</p>
-                    )}
-                    {info.title == "準備中" && (
-                      <p className={styles.date}>XXXX.XX.XX</p>
-                    )}
-                    
-                    <h4>{info.title}</h4>
-                    {/* <p>
-                      {info.description > 38 ||(
-                        info.description.substring(0, 37)+'…'                    
+              return(
+                <Link href={info.link} key={info.id} passHref>
+                  <a className={styles.content}>
+                    <Center className={styles.image}>
+                      <Image src={info.mv.url} alt={info.title} width='100%' height='17.6rem'/>
+                    </Center>
+
+                    <div className={styles.txt}>
+                      <Flex className={styles.tags}>
+                        {newTag > today && (
+                          <p className={styles.new}>NEW</p>
+                        )}
+                        {newTag < today && upDate > today &&(
+                          <p className={styles.update}>更新</p>
+                        )}
+                        <p>{info.tag}</p>
+                      </Flex>
+
+                      {info.title !== "準備中" && (
+                        <p className={styles.date}>{new Date(info.publishedAt).toLocaleDateString()}</p>
                       )}
-                    </p> */}
-                  </div>
-                </a>
-              </Link>
-            ))}
+                      {info.title == "準備中" && (
+                        <p className={styles.date}>XXXX.XX.XX</p>
+                      )}
+                      
+                      <h4>{info.title}</h4>
+                      {/* <p>
+                        {info.description > 38 ||(
+                          info.description.substring(0, 37)+'…'                    
+                        )}
+                      </p> */}
+                    </div>
+                  </a>
+                </Link>
+              )
+            })}
           </Slider>
 
           <Link href='/news/' passHref>

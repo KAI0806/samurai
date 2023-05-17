@@ -108,6 +108,10 @@
     background: #F2182A;
 }
 
+.news ul li .update{
+    background: #1A3491;
+}
+
 .news ul li p{
     color: #A8A8A8;
     width: 11.4rem;

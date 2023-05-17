@@ -100,38 +100,50 @@ export default function useCampaigns({campaigns}){
                             </TabList>
 
                             <TabPanels className={styles.tabpanels}>
-                                {campaigns.slice(0, 5).map((campaign) => (
-                                    <TabPanel className={styles.tabpanel} key={campaign.id}>
-                                        <div className={styles.left}>
-                                            <Link href={campaign.link} passHref>
-                                                <a className={styles.image} target="_blank" rel='noreferrer'>
-                                                    <Image src={campaign.Media.url} alt={campaign.title} with='auto' height='auto'/>
-                                                </a>
-                                            </Link>
+                                {campaigns.slice(0, 5).map((campaign) => {
+                                    let newTag = new Date(campaign.publishedAt)
+                                    newTag.setDate(newTag.getDate() + 14)
+                    
+                                    let upDate = new Date(campaign.updatedAt)
+                                    upDate.setDate(upDate.getDate() + 14)
+                                    return(
+                                        <TabPanel className={styles.tabpanel} key={campaign.id}>
+                                            <div className={styles.left}>
+                                                <Link href={campaign.link} passHref>
+                                                    <a className={styles.image} target="_blank" rel='noreferrer'>
+                                                        <Image src={campaign.Media.url} alt={campaign.title} with='auto' height='auto'/>
+                                                    </a>
+                                                </Link>
 
-                                            <div className={styles.txt}>
-                                                <Flex>
-                                                    <p>{new Date(campaign.publishedAt).toLocaleDateString()}</p>
-                                                    <Flex className={styles.tags}>
-                                                        <p className={styles.new}>NEW</p>
-                                                        {campaign.tag.map((value, key) =>(
-                                                            <p key={key}>{value}</p>
-                                                        ))}
+                                                <div className={styles.txt}>
+                                                    <Flex>
+                                                        <p>{new Date(campaign.publishedAt).toLocaleDateString()}</p>
+                                                        <Flex className={styles.tags}>
+                                                            {newTag > today && (
+                                                                <p className={styles.new}>NEW</p>
+                                                            )}
+                                                            {newTag < today && upDate > today &&(
+                                                                <p className={styles.update}>更新</p>
+                                                            )}
+                                                            {campaign.tag.map((value, key) =>(
+                                                                <p key={key}>{value}</p>
+                                                            ))}
+                                                        </Flex>
                                                     </Flex>
-                                                </Flex>
 
-                                                <p>{campaign.subTitle}</p>
+                                                    <p>{campaign.subTitle}</p>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div className={styles.right}>
-                                            <div>
-                                                <Image src={campaign.subMedia.url} alt={campaign.title} width='auto' height='100%'/>
+                                            <div className={styles.right}>
+                                                <div>
+                                                    <Image src={campaign.subMedia.url} alt={campaign.title} width='auto' height='100%'/>
+                                                </div>
+                                                <p>{campaign.title}</p>
                                             </div>
-                                            <p>{campaign.title}</p>
-                                        </div>
-                                    </TabPanel>
-                                ))}
+                                        </TabPanel>
+                                    )
+                                })}
                             </TabPanels>
                         </Tabs>
                     </div>

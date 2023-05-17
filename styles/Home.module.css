@@ -147,8 +147,12 @@
   margin-right: .8rem;
 }
 
-.campaign .wrap .right .content .txt .tags p:first-child, .news .content .txt .tags p:first-child{
+.campaign .wrap .right .content .txt .tags .new, .news .content .txt .tags .new{
   background: #F2182A;
+}
+
+.campaign .wrap .right .content .txt .tags .update, .news .content .txt .tags .update{
+  background: #1A3491;
 }
 
 .campaign .wrap .right .content .txt .date, .news .content .txt .date{
