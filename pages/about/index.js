@@ -80,7 +80,7 @@ export default function About() {
                             <p data-aos="fade-up" data-aos-delay="600">
                                 〒160-0023 東京都新宿区西新宿7-22-33 <br className="sp_only"/>Polar西新宿 5F<br/>
                                 TEL 03-6822-2050<br/>
-                                メールアドレス ： <br className="sp_only"/>info@japan-energy.com
+                                メールアドレス ： <br className="sp_only"/>support@japan-energy-ltd.co.jp
                             </p>
 
                             <Link href='/about/company_profile/' passHref>

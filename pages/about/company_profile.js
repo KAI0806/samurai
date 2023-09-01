@@ -81,6 +81,17 @@ export default function CompanyProfile(){
                             <h3>電話番号</h3>
                             <p>03-6822-2050</p>
                         </Flex>
+                        <Flex>
+                            <h3>主要取引先</h3>
+                            <p>
+                                加藤産業株式会社、三菱食品株式会社、株式会社日本アクセス、榎本酒類株式会社、<br className="pc_only"/>
+                                群馬県卸酒販株式会社、北海道酒類販売株式会社、ヤマエ久野株式会社、<br className="pc_only"/>
+                                株式会社大平商会、株式会社光新星、国際協商株式会社、東映アニメーション株式会社、<br className="pc_only"/>
+                                株式会社アニプレックス、株式会社講談社、株式会社綜合キャリアオプション、<br className="pc_only"/>
+                                株式会社エクシオモバイル<br className="pc_only"/>
+                                GMOあおぞらネット銀行、東京シティ信用金庫、りそな銀行
+                            </p>
+                        </Flex>
                     </div>
                 </Center>
 
