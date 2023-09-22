@@ -1,0 +1,734 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+.burst *{
+    font-family: "Noto Serif JP", serif;
+    font-weight: bold;
+}
+
+.inner {
+	margin-inline: auto;
+	max-width: 980px;
+	padding: 0 20px;
+}
+
+.FV {
+	background-image: url(/images/product/FV.jpg);
+	background-position: 69% 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 48.35vw;
+	position: relative;
+}
+
+.FV__inner {
+	height: 100%;
+	position: relative;
+	width: 70vw;
+}
+
+.FV__title {
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+}
+
+.main {
+	background: url(/images/product/bg.jpg) no-repeat center center/cover;
+	margin-top: -38px;
+}
+
+.logo_sp {
+	display: none;
+}
+
+.desc {
+	padding-top: 56px;
+	text-align: center;
+}
+
+.desc__title {
+	display: inline-block;
+	margin-inline: auto;
+	position: relative;
+	width: 682px;
+	z-index: 1;
+}
+
+.desc__text {
+	font-size: 3.5rem;
+	font-weight: 600;
+	letter-spacing: -1.4px;
+	line-height: 1.7142857143;
+	margin-top: 30px;
+    color: white;
+}
+
+.desc__cta {
+	margin-top: 60px;
+}
+
+.cta {
+	display: block;
+	transition: all 0.3s;
+	width: 100%;
+}
+
+.cta:hover {
+	opacity: 0.7;
+}
+
+.movie {
+	margin-top: 30px;
+}
+
+.movie__title {
+	width: 201px;
+}
+
+.movie__img {
+	margin-top: 17px;
+}
+
+.movie__cta {
+	margin-top: 33px;
+	position: relative;
+	z-index: 10;
+}
+
+.product {
+	margin-bottom: 58px;
+	margin-top: 120px;
+	position: relative;
+	z-index: 1;
+}
+
+.product::before {
+	background: url(/images/product/splash.png) no-repeat center center/cover;
+	content: "";
+	height: 69.2857142857vw;
+	left: 49.5%;
+	position: absolute;
+	top: -80px;
+	transform: translateX(-50%);
+	width: 80%;
+	z-index: -1;
+}
+
+.product__title {
+	width: 230px;
+}
+
+.product__img {
+	margin: -32px auto 0;
+	width: 304px;
+}
+
+.product__desc {
+	border: 1px solid #fff;
+	margin-top: 37px;
+}
+
+.product__desc_name {
+	background-color: #fff;
+	color: #1d2975;
+	font-size: 2.8rem;
+	letter-spacing: 0.8px;
+	padding: 9px 0;
+	text-align: center;
+}
+
+.product__desc_name span {
+	display: inline-block;
+	font-size: 2rem;
+}
+
+.product__desc_box {
+	padding: 21px 26px 24px 21px;
+}
+
+.product__desc_title {
+	color: #FFF100;
+	font-size: 2.9rem;
+	letter-spacing: -2px;
+	line-height: 1.2931034483;
+	text-align: center;
+}
+
+.product__desc_ingredient {
+    color: white;
+	font-size: 1.3rem;
+	line-height: 1.2941176471;
+	padding-bottom: 21px;
+	padding-top: 26px;
+	word-break: break-all;
+}
+
+.product__desc_ingredient + .product__desc_ingredient {
+	border-top: 1px solid #fff;
+	padding-bottom: 26px;
+	padding-top: 17px;
+}
+
+.product__desc_note {
+    color: white;
+	border: 1px solid #fff;
+	font-size: 1.3rem;
+	letter-spacing: -0.8px;
+	line-height: 1.2352941176;
+	padding: 9px;
+}
+
+.product__risks {
+	margin-top: 45px;
+}
+
+.product__arrow {
+	border-color: #D71618 transparent transparent transparent;
+	border-style: solid;
+	border-width: 60px 88.5px 0 88.5px;
+	height: 0;
+	margin: 60px auto 0;
+	width: 0;
+}
+
+.product__point {
+	color: #FFF100;
+	font-family: YuMincho, "Yu Mincho", serif;
+	font-size: 5.3rem;
+	font-weight: 600;
+	line-height: 1.3;
+	margin-top: 42px;
+	text-align: center;
+}
+
+.product__point__l {
+	color: #fff;
+	font-size: 5.6rem;
+	line-height: 1.1964285714;
+}
+
+.product__point__s {
+	color: #fff;
+	display: inline-block;
+	font-size: 4.3rem;
+	font-weight: 400;
+	line-height: 1.3023255814;
+	transform: translateY(-4px);
+}
+
+.product__point__no {
+	transform: translate(7px, -4px);
+}
+
+.product__cta {
+	margin-top: 50px;
+}
+
+.product__dot {
+    color: #FFF100;
+	display: inline-block;
+	padding-right: 30px;
+	position: relative;
+}
+
+.product__dot::after {
+	content: "・";
+	font-size: 5.3rem;
+	position: absolute;
+	right: -10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.product__katakana1 {
+    color: #FFF100;
+	display: inline-block;
+	letter-spacing: -11px;
+	margin-right: 10px;
+}
+
+.product__katakana2{
+    color: #FFF100;
+}
+
+.product__inner {
+	margin-inline: auto;
+	max-width: 1100px;
+	padding: 0 40px;
+}
+
+.product_risk {
+	align-items: flex-start;
+	display: flex;
+}
+
+.product_risk + .product_risk {
+	margin-top: 44px;
+}
+
+.product_risk__kinds {
+	height: 179px;
+	margin-right: 52px;
+	width: 179px;
+}
+
+.product_risk__desc {
+    color: white;
+	flex: 1;
+	font-size: 2.2rem;
+	letter-spacing: -0.2px;
+	line-height: 1.2727272727;
+	margin-top: 18px;
+}
+
+.situation {
+	background: url(/images/product/red-bg.webp) no-repeat center center/cover;
+	padding-bottom: 52px;
+	padding-top: 40px;
+}
+
+.situation__title {
+	width: 253px;
+}
+
+.situation__inner {
+	margin-inline: auto;
+	max-width: 1004px;
+	padding: 0 40px;
+}
+
+.situation__slider {
+	margin-top: 36px;
+}
+
+.situation__slide {
+	border: 1px solid #fff;
+	height: 375px;
+	padding: 20px 25px 17px 20px;
+}
+
+.situation__slide_img {
+	width: 100%;
+}
+
+.situation__slide_img img {
+	width: 100%;
+}
+
+.situation__slide_title {
+    color: white;
+	font-size: 2.2rem;
+	margin-top: 13px;
+	padding-left: 16px;
+	position: relative;
+}
+
+.situation__slide_title::before {
+	background-color: #FFF100;
+	content: "";
+	height: 20px;
+	left: 4px;
+	position: absolute;
+	top: 3px;
+	width: 9px;
+}
+
+.situation__slide_text {
+	font-size: 1.7rem;
+	letter-spacing: -1px;
+	line-height: 1.323;
+	margin-top: 6px;
+	word-break: break-all;
+    color: white;
+}
+
+.about {
+	padding-top: 45px;
+}
+
+.about__title {
+	width: 514px;
+}
+
+.about__inner {
+	margin-inline: auto;
+	max-width: 1045px;
+	padding: 0 20px;
+}
+
+.about__container {
+	display: flex;
+	margin-top: 21px;
+}
+
+.about__img {
+	margin-right: 30px;
+	width: 430px;
+}
+
+.about__content {
+	flex: 1;
+	padding-top: 48px;
+}
+
+.about__content_title {
+	color: #FFF100;
+	font-family: YuMincho, "Yu Mincho", serif;
+	font-size: 6rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.about__katakana {
+    color: #FFF100;
+	letter-spacing: -7px;
+}
+
+.about__text {
+    color: white;
+	font-size: 3.1rem;
+	font-weight: 500;
+	letter-spacing: -2.2px;
+	line-height: 1;
+	margin-top: 28px;
+}
+
+.about__text + .about__text {
+	margin-top: 5px;
+}
+
+.about__price {
+	margin-top: 36px;
+}
+
+.about__price_desc {
+    color: white;
+	font-size: 2.3rem;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	line-height: 1.4347826087;
+}
+
+.about__cta {
+	margin-top: 68px;
+}
+
+.copyright {
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-top: 45px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.label img {
+	transform: scale(1.2);
+}
+
+.s_only {
+	display: none;
+}
+
+.slider1 {
+	position: relative;
+}
+
+.js_inview {
+	opacity: 0;
+}
+
+.js_inview.js_animate {
+	animation: inview_slide_up 0.7s forwards 0.4s;
+}
+
+.js_inview_group .js_animate_item {
+	opacity: 0;
+}
+
+.js_inview-group .js_animate_item.js_animate {
+	animation: inview_slide_up 0.7s forwards 0.5s;
+}
+
+@media screen and (max-width: 1040px) {
+
+.situation__slide {
+	height: auto;
+}
+
+.about__container {
+	display: block;
+}
+
+.about__img {
+	margin-right: 0;
+	width: 100%;
+}
+
+.about__content {
+	padding-top: 20px;
+}
+
+.about__content_title {
+	font-size: 2.45rem;
+}
+
+.about__text {
+	margin-top: 20px;
+}
+
+.about__text {
+	font-size: 1.7rem;
+}
+
+.about__price {
+	margin-top: 20px;
+}
+
+.about__price_desc {
+	font-size: 1.7rem;
+}
+
+.about__cta {
+	margin-top: 15px;
+}
+}
+
+@media screen and (max-width: 767px) {
+
+.inner {
+	padding: 0 20px;
+}
+
+.FV {
+	background-image: url(/images/product/FV-sp.jpg);
+	background-position: 110% 4%;
+	height: 171.666667vw;
+}
+
+.FV__title {
+	display: block;
+}
+
+.main {
+	margin-top: -1px;
+}
+
+.logo {
+	display: none;
+}
+
+.logo_sp {
+	display: block;
+}
+
+.desc {
+	padding-top: 6px;
+}
+
+.desc__title {
+	width: 286px;
+}
+
+.desc__text {
+	font-size: 1.5rem;
+	line-height: 1.3;
+	margin-top: 12px;
+}
+
+.desc__cta {
+	margin-top: 30px;
+}
+
+.movie__title {
+	width: 85px;
+}
+
+.movie__img {
+	margin-top: 7px;
+}
+
+.movie__cta {
+	margin-top: 15px;
+}
+
+.product {
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.product::before {
+	height: 94.9333333333vw;
+	top: 0px;
+	width: 120%;
+}
+
+.product__title {
+	width: 107px;
+}
+
+.product__img {
+	margin: 10px auto 0;
+	width: 94px;
+}
+
+.product__desc_name {
+	font-size: 1.5rem;
+	letter-spacing: 0px;
+}
+
+.product__desc_name span {
+	font-size: 1.2rem;
+}
+
+.product__desc_box {
+	padding: 18px 10px 14px 10px;
+}
+
+.product__desc_title {
+	font-size: 1.7rem;
+}
+
+.product__desc_ingredient {
+	letter-spacing: -0.1px;
+	padding-bottom: 13px;
+	padding-top: 16px;
+}
+
+.product__desc_ingredient + .product__desc_ingredient {
+	padding-bottom: 16px;
+}
+
+.product__desc_note {
+	font-size: 1.2rem;
+	line-height: 1.25;
+	padding: 4px;
+}
+
+.product__arrow {
+	border-width: 22px 29px 0 29px;
+	margin-top: 30px;
+}
+
+.product__point {
+	font-size: 1.9rem;
+	margin-top: 22px;
+}
+
+.product__point__l {
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+.product__point__s {
+	font-size: 1.5rem;
+	line-height: 1.6666666667;
+	transform: translateY(-1px);
+}
+
+.product__point__no {
+	transform: translate(4px, -1px);
+}
+
+.product__cta {
+	margin-top: 31px;
+}
+
+.product__dot {
+	padding-right: 10px;
+}
+
+.product__dot::after {
+	font-size: 1.9rem;
+	right: -4px;
+}
+
+.product__katakana1 {
+	letter-spacing: 0px;
+	margin-right: 0;
+}
+
+.product__inner {
+	padding: 0 20px;
+}
+
+.product_risk {
+	align-items: center;
+}
+
+.product_risk + .product_risk {
+	margin-top: 21px;
+}
+
+.product_risk__kinds {
+	height: 64px;
+	margin-right: 27px;
+	width: 64px;
+}
+
+.product_risk__desc {
+	font-size: 1.4rem;
+	margin-top: 0;
+}
+
+.situation {
+	padding-top: 30px;
+}
+
+.situation__title {
+	width: 121px;
+}
+
+.situation__inner {
+	padding: 0 30px;
+}
+
+.situation__slider {
+	margin-top: 10px;
+}
+
+.about__title {
+	width: 246px;
+}
+
+.about__inner {
+	padding: 0 20px;
+}
+
+.copyright {
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.s_none {
+	display: none;
+}
+
+.s_only {
+	display: block;
+}
+
+}
+
+@keyframes inview_slide_up {
+
+0% {
+	bottom: -50px;
+}
+
+100% {
+	bottom: 0;
+	opacity: 1;
+}
+
+}
+

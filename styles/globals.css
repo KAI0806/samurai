@@ -373,6 +373,36 @@ main{
   content: "4";
 } */
 
+.burst .slick-slide {
+	margin: 0 12px;
+}
+
+.burst .slick-arrow {
+	background-color: transparent;
+	position: absolute;
+	text-indent: -9999px;
+	top: 52%;
+	transform: translateY(-50%);
+}
+
+.burst .slick-prev {
+	border-color: transparent #fff transparent transparent;
+	border-style: solid;
+	border-width: 15px 25px 15px 0;
+	height: 0;
+	left: -63px;
+	width: 0;
+}
+
+.burst .slick-next {
+	border-color: transparent transparent transparent #fff;
+	border-style: solid;
+	border-width: 15px 0 15px 25px;
+	height: 0;
+	right: -55px;
+	width: 0;
+}
+
 /* campaigns */
 .campaigns{
   padding: 9.2rem 0 16.4rem;
@@ -702,6 +732,18 @@ footer .guide div{
 footer .guide div a{
   font-size: 1.4rem;
   margin-left: 2.4rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .burst .slick-prev {
+    border-width: 5.5px 9px 5.5px 0;
+    left: -29px;
+  }
+  
+  .burst .slick-next {
+    border-width: 5.5px 0 5.5px 9px;
+    right: -29px;
+  }
 }
 
 @media screen and (max-width: 767px){
