@@ -311,6 +311,10 @@ main{
   background: url('/images/top/mv_bg04.webp') no-repeat center center/cover;
 }
 
+.mvSlider .slide04{
+  background: url('/images/top/mv_bg05.webp') no-repeat center center/cover;
+}
+
 .mvSlider .slick-dots {
   bottom: 5rem;
 }
@@ -373,8 +377,8 @@ main{
   content: "4";
 } */
 
-.burst .slick-slide {
-	margin: 0 12px;
+.burst .slick-slide div {
+	width: 96%;
 }
 
 .burst .slick-arrow {
@@ -962,6 +966,10 @@ footer .guide div a{
 
   .mvSlider .slide03{
     background: url('/images/top/mv_bg04_sp.webp') no-repeat center center/cover;
+  }
+
+  .mvSlider .slide04{
+    background: url('/images/top/mv_bg05_sp.webp') no-repeat center center/cover;
   }
 
   /* campaign */

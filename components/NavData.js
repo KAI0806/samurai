@@ -5,7 +5,7 @@ export const NavData =[
     },
     {
         title: 'PRODUCT',
-        url: '/products/SAMURAI_ENERGY_DRINK',
+        url: '/products/SAMURAI_ENERGY_BURST',
     },
     {
         title: 'CAMPAIGN',

@@ -48,7 +48,7 @@ export default function SamuraiEnergyBurst(){
           <div className={`${styles.desc__cta}`}>
             <a href="https://www.amazon.co.jp/dp/B0CGTW6KB8?ref=myi_title_dp" className={styles.cta} target="_blank" rel="noopener noreferrer">
               <picture>
-                <source srcset="/images/product/cta-sp.png" media="(max-width:767px)" />
+                <source srcSet="/images/product/cta-sp.png" media="(max-width:767px)" />
                 <img src="/images/product/cta.png" alt="Burst of Energy! 爆発的な活力を手に入れたい方はコチラ!" width="4377" height="293" loading="lazy" />
               </picture>
             </a>
@@ -78,7 +78,7 @@ export default function SamuraiEnergyBurst(){
             <li className={`${styles.product_risk} ${styles.js_animate_item}`}>
               <h3 className={`${styles.product_risk__kinds}`}>
                 <picture>
-                  <source srcset="/images/product/risk1-sp.png" media="(max-width:767px)" />
+                  <source srcSet="/images/product/risk1-sp.png" media="(max-width:767px)" />
                   <img src="/images/product/risk1.png" alt="糖類のリスク" width="1750" height="1750" loading="lazy" />
                 </picture>
               </h3>
@@ -87,7 +87,7 @@ export default function SamuraiEnergyBurst(){
             <li className={`${styles.product_risk} ${styles.js_animate_item}`}>
               <h3 className={`${styles.product_risk__kinds}`}>
                 <picture>
-                  <source srcset="/images/product/risk2-sp.png" media="(max-width:767px)" />
+                  <source srcSet="/images/product/risk2-sp.png" media="(max-width:767px)" />
                   <img src="/images/product/risk2.png" alt="脂質のリスク" width="1750" height="1750" loading="lazy" />
                 </picture>
               </h3>
@@ -96,7 +96,7 @@ export default function SamuraiEnergyBurst(){
             <li className={`${styles.product_risk} ${styles.js_animate_item}`}>
               <h3 className={`${styles.product_risk__kinds}`}>
                 <picture>
-                  <source srcset="/images/product/risk3-sp.png" media="(max-width:767px)" />
+                  <source srcSet="/images/product/risk3-sp.png" media="(max-width:767px)" />
                   <img src="/images/product/risk3.png" alt="カロリーのリスク" width="1750" height="1750" loading="lazy" />
                 </picture>
               </h3>
@@ -116,7 +116,7 @@ export default function SamuraiEnergyBurst(){
           <div className={`${styles.product__cta}`}>
             <a href="https://www.amazon.co.jp/dp/B0CGTW6KB8?ref=myi_title_dp" className="cta" target="_blank" rel="noopener noreferrer">
               <picture>
-                <source srcset="/images/product/cta-sp.png" media="(max-width:767px)" />
+                <source srcSet="/images/product/cta-sp.png" media="(max-width:767px)" />
                 <img src="/images/product/cta.png" alt="Burst of Energy! 爆発的な活力を手に入れたい方はコチラ!" width="4377" height="293" loading="lazy" />
               </picture>
             </a>
@@ -220,7 +220,7 @@ export default function SamuraiEnergyBurst(){
           <div className={styles.about__cta}>
             <a href="https://www.amazon.co.jp/dp/B0CGTW6KB8?ref=myi_title_dp" className="cta"  target="_blank" rel="noopener noreferrer">
               <picture>
-                <source srcset="/images/product/cta-sp.png" media="(max-width:767px)" />
+                <source srcSet="/images/product/cta-sp.png" media="(max-width:767px)" />
                 <img src="/images/product/cta.png" alt="Burst of Energy! 爆発的な活力を手に入れたい方はコチラ!" width="4377" height="293" loading="lazy" />
               </picture>
             </a>
