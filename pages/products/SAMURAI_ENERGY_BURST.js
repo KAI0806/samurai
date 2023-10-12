@@ -46,7 +46,7 @@ export default function SamuraiEnergyBurst(){
             「SAMURAI ENERGY」とは<br className={`${styles.s_only}`} />また違う刺激的なフレーバー！
           </p>
           <div className={`${styles.desc__cta}`}>
-            <a href="https://www.amazon.co.jp/dp/B0CGTW6KB8?ref=myi_title_dp" className={styles.cta} target="_blank" rel="noopener noreferrer">
+            <a href="https://amzn.asia/d/446XdEB" className={styles.cta} target="_blank" rel="noopener noreferrer">
               <picture>
                 <source srcSet="/images/product/cta-sp.png" media="(max-width:767px)" />
                 <img src="/images/product/cta.png" alt="Burst of Energy! 爆発的な活力を手に入れたい方はコチラ!" width="4377" height="293" loading="lazy" />
@@ -114,7 +114,7 @@ export default function SamuraiEnergyBurst(){
         </div>
         <div className={styles.inner}>
           <div className={`${styles.product__cta}`}>
-            <a href="https://www.amazon.co.jp/dp/B0CGTW6KB8?ref=myi_title_dp" className="cta" target="_blank" rel="noopener noreferrer">
+            <a href="https://amzn.asia/d/446XdEB" className="cta" target="_blank" rel="noopener noreferrer">
               <picture>
                 <source srcSet="/images/product/cta-sp.png" media="(max-width:767px)" />
                 <img src="/images/product/cta.png" alt="Burst of Energy! 爆発的な活力を手に入れたい方はコチラ!" width="4377" height="293" loading="lazy" />
@@ -218,7 +218,7 @@ export default function SamuraiEnergyBurst(){
             </div>
           </div>
           <div className={styles.about__cta}>
-            <a href="https://www.amazon.co.jp/dp/B0CGTW6KB8?ref=myi_title_dp" className="cta"  target="_blank" rel="noopener noreferrer">
+            <a href="https://amzn.asia/d/446XdEB" className="cta"  target="_blank" rel="noopener noreferrer">
               <picture>
                 <source srcSet="/images/product/cta-sp.png" media="(max-width:767px)" />
                 <img src="/images/product/cta.png" alt="Burst of Energy! 爆発的な活力を手に入れたい方はコチラ!" width="4377" height="293" loading="lazy" />
